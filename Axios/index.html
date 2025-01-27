@@ -1,0 +1,47 @@
+<!-- Definição do tipo de documento e idioma -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Configuração de caracteres e viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Axios</title>
+    
+    <!-- Importação da biblioteca Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+    <!-- Importação de scripts personalizados -->
+    <script src="./js/custom.js"></script>
+    <!-- <script src="./js/global.js"></script> -->
+    
+    <!-- Importação de middlewares e interceptores -->
+    <script src="./js/interceptors.js"></script>
+    
+    <!-- Importação do script principal com defer para carregar após o HTML -->
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <!-- Título da página -->
+    <h1>AXIOS</h1>
+    
+    <!-- Formulário para criar um post -->
+    <h2>Insira um Post</h2>
+    <form id="post-form">
+        <div>
+            <!-- Campo para título do post -->
+            <input type="text" id="title" placeholder="Um titulo">
+        </div>
+        <div>
+            <!-- Campo para corpo do post -->
+            <textarea id="body"></textarea>
+        </div>
+        <!-- Botão para criar o post -->
+        <input type="submit" value="Criar Post" />
+    </form>
+    
+    <!-- Contêiner para impressão de dados -->
+    <div id="user-container"></div>
+</body>
+</html>
